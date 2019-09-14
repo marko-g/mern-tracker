@@ -38,7 +38,7 @@ class CreateExercises extends Component {
       date: this.state.date
     };
     console.log(exercise);
-    // window.location = "/";
+    window.location = "/";
   };
 
   render() {
