@@ -36,6 +36,12 @@ class CreateExercises extends Component {
     });
   };
 
+  onChangeDate = date => {
+    this.setState({
+      date: date
+    });
+  };
+
   onSubmit = event => {
     event.preventDefault();
 
@@ -65,6 +71,7 @@ class CreateExercises extends Component {
               ref="userInput"
               required
               className="form-control"
+              name="username"
               value={this.state.username}
               onChange={this.onChange}
             >
@@ -82,8 +89,8 @@ class CreateExercises extends Component {
             <input
               type="text"
               required
-              name="description"
               className="form-control"
+              name="description"
               value={this.state.description}
               onChange={this.onChange}
             />
